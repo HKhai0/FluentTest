@@ -3,10 +3,10 @@ local SaveManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/d
 local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "Fluent " .. Fluent.Version,
+    Title = "KhoatDeScript",
     SubTitle = "by dawid",
     TabWidth = 160,
-    Size = UDim2.fromOffset(580, 460),
+    Size = UDim2.fromOffset(300, 300),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Dark",
     MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
@@ -22,10 +22,10 @@ local Options = Fluent.Options
 
 do
     Fluent:Notify({
-        Title = "Notification",
-        Content = "This is a notification",
-        SubContent = "SubContent", -- Optional
-        Duration = 5 -- Set to nil to make the notification not disappear
+        Title = "KhoatDeScript",
+        Content = "Loaded",
+        SubContent = "mmmmbb", -- Optional
+        Duration = 1 -- Set to nil to make the notification not disappear
     })
 
 
@@ -55,6 +55,12 @@ do
                         Title = "Cancel",
                         Callback = function()
                             print("Cancelled the dialog.")
+                        end
+                    },
+                    {
+                        Title = "KhoatDeButton",
+                        Callback = function()
+                            print("KhoatDeGay")
                         end
                     }
                 }
